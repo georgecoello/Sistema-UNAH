@@ -269,5 +269,5 @@ function generateHash(length,type) {
 
 /**FUNCION PARA REDIRECCIONAR A LA PANTALLA DE REGISTRO EXITOSO */
 function redireccionar(){
-    window.location="/expedientes-graduacion/module/estudiante/registro-exitoso.php";
+    window.location="../../module/estudiante/registro-exitoso.php";
 }
