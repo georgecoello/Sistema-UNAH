@@ -1,0 +1,69 @@
+.sombra-corta{
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2);
+}
+.sombra-corta2{
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.4);
+}
+.sombra-corta3{
+    box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.sombra-corta3{
+    box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.sombra-arriba {
+    box-shadow: 0px -5px 15px 0 rgba(0,0,0,0.4);
+}
+
+.sombra {
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+}
+
+.centrar {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 80vh;
+}
+
+.color-bnav {
+    background-color:   #20396e  ;
+    border-color: #20396e;
+}
+
+
+.naranja {
+    background-color:   #fdc300  ;
+    border-color: #fdc300 ;
+    
+}
+
+.redondear {
+    border-radius: 5px;
+}
+
+.vl {
+    border-left: 1px solid  #000e2bb0; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left: 8%;
+ }
+
+.btn-menu {
+    background-color:  #2c4a9c ;
+    font-size: 12px; 
+    border-color:  #2c4a9c ; 
+    border-radius: 5px;
+} 
+  
+.btn-menu:hover{
+    background-color:  #2762ac ;
+    border-color: #2762ac;
+}
+
+.btn-salir {
+    background-color: #990000;
+    border-color:#990000
+}
+  
