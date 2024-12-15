@@ -540,6 +540,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 <th scope="col">Nombre</th>
                                                 <th scope="col">Numero Cuenta</th>
                                                 <th scope="col">Fecha Cita</th>
+                                                <th scope="col">Correo Institucional</th>
                                             </tr>
                                         </thead>
                                         <tbody id="estudiantes-excel">
