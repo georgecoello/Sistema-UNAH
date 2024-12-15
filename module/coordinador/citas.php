@@ -119,11 +119,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                     <small > <strong> Expedientes </strong></small> 
                                 </div>   
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="otros-documentos.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Otros Documentos</strong> </small></a>
-                                </div>
-                            </div> 
+                           
                             <div class="row">
                                 <div class="col">
                                     <a href="revisar-expediente.php" class="btn btn-warning naranja m-2 col-11 btn-sm sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Solicitudes nuevas</strong> </small></a>

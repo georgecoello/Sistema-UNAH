@@ -22,7 +22,7 @@
                     "estado" => $row["estado"]
                 );
             }
-            
+
             $jsonstring = json_encode($json[0]);
             echo $jsonstring;
         }
@@ -32,7 +32,5 @@
     }else{
         echo json_encode('Fallo');
     }
-
-    
 
 ?>

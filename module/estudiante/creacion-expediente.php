@@ -274,7 +274,7 @@
                         <div class="col-10 text-center">
                             <div class="table-responsive">
                                 
-                                <table class="table table-striped table-hover text-center align-self-center table-light" id="example">
+                                <table class="table table-hover table-striped text-center align-self-center table-light" id="example">
                                         
                                         <thead class="thead-dark">
                                             <tr>
@@ -287,7 +287,7 @@
                                         </thead>
                                         <tbody>
                                             <tr codigo='1'>
-                                                <td> <small> Constancia de Verificación de Nombre (Fotofgrafía Ovalada Pegada) <br> (.pdf) </small></td>
+                                                <td> <small> Constancia de Verificación de Nombre <br> Fotografía Ovalada Pegada <br> (.pdf) </small></td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -299,7 +299,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='2'>
-                                                <td> <small>Copia de DNI (ambos lados) <br>(.pdf)</small> </td>
+                                                <td> <small>Copia de DNI <br> (Ambos lados) <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -310,9 +310,8 @@
                                                     <span id='sub-doc-2' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            
                                             <tr codigo='3'>
-                                                <td> <small> Certificación de Calificaciones <br>(.pdf)</small> </td>
+                                                <td> <small> Certificado de Calificaciones <br> (Original)<br> (.pdf) </small></td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -320,12 +319,11 @@
                                                     <button class="btn btn-info btn-sm subir">Subir</button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-4' class="badge badge-danger">Sin subir</span>   
+                                                    <span id='sub-doc-3' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            
                                             <tr codigo='4'>
-                                                <td> <small> Constancia de Trabajo Social Comunitario <br>Emitidad por VOAE <br> (.pdf)</small> </td>
+                                                <td> <small> Constancias de Horas Artículo 140 <br> VOAE <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -336,9 +334,26 @@
                                                     <span id='sub-doc-4' class="badge badge-danger">Sin subir</span>   
                                                 </td>
                                             </tr>
-
+                                            <tr>
+                                            <td> <small> Confirmación de Horas Artículo 140 (VOAE)</small></td>
+                                            <td colspan="3">
+                                                Aquí irán las horas voae
+                                            </td>
+                                            </tr>
                                             <tr codigo='5'>
                                                 <td> <small> Constancia de Práctica Profesional Laboral<br>(.pdf)</small></td>
+                                                <td class='doc-estudiante'>
+                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                </td>
+                                                <td>
+                                                    <span id='sub-doc-5' class="badge badge-danger">Sin subir</span>
+                                                </td>
+                                            </tr>
+                                            <tr codigo='6'>
+                                                <td> <small> Solicitud de Realización del Himno y su Aprobación<br>(.pdf)</small></td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -349,8 +364,8 @@
                                                     <span id='sub-doc-6' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            <tr codigo='6'>
-                                                <td> <small>Solicitud de realización del Examen del Himno Nacional y su Aprobación <br>(.pdf)</small> </td>
+                                            <tr codigo='7'>
+                                                <td> <small>Solicitud de Extensión de Título <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -361,21 +376,8 @@
                                                     <span id='sub-doc-7' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            <tr codigo='7'>
-                                                <td> <small>Solicitud de Extensión de Título<br>(.pdf)</small> </td>
-                                                <td class='doc-estudiante'>
-                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
-                                                </td>
-                                                <td>
-                                                    <span id='sub-doc-8' class="badge badge-danger">Sin subir</span>
-                                                </td>
-                                            </tr>
-                                            
                                             <tr codigo='8'>
-                                                <td> <small>Fotocopia de Título de Educación Media (ambos lados)<br>(.pdf)</small> </td>
+                                                <td> <small>Copia del Título de Educación Media <br> Ambos Lados <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -386,9 +388,20 @@
                                                     <span id='sub-doc-8' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-
                                             <tr codigo='9'>
-                                                <td> <small> Boleta por Pago de Carnet L 30.00 <br>(.pdf)</small> </td>
+                                                <td> <small>Boleta de Pago de Carnet de Estudiante<br> L. 30.00 <br>(.pdf)</small> </td>
+                                                <td class='doc-estudiante'>
+                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                </td>
+                                                <td>
+                                                    <span id='sub-doc-9' class="badge badge-danger">Sin subir</span>
+                                                </td>
+                                            </tr>
+                                            <tr codigo='10'>
+                                                <td> <small> Boleta de Pago de Trámites de Graduación <br> L. 4,000.00 <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -399,8 +412,8 @@
                                                     <span id='sub-doc-10' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            <tr codigo='10'>
-                                                <td> <small> Boleta de Pago de Trámites de Graduación<br> L.4,000.00 <br>(.pdf)</small></td>
+                                            <tr codigo='11'>
+                                                <td> <small> Boleta de Pago de Entega de Título por Ventanilla <br> L.2,500.00 <br>(.pdf)</small></td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -409,18 +422,6 @@
                                                 </td>
                                                 <td>
                                                     <span id='sub-doc-11' class="badge badge-danger">Sin subir</span>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='11'>
-                                                <td> <small>Boleta de pago de entrega de Título por Ventanilla <br> L. 2,500.00 <br>(.pdf)</small> </td>
-                                                <td class='doc-estudiante'>
-                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
-                                                </td>
-                                                <td>
-                                                    <span id='sub-doc-12' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
                                             <tr codigo='12'>
@@ -432,11 +433,23 @@
                                                     <button class="btn btn-info btn-sm subir">Subir</button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-13' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-12' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
                                             <tr codigo='13'>
-                                                <td> <small>Foto Ovalada (1) <br>(.pdf)</small> </td>
+                                                <td> <small>Timbre de Contratación L. 100.00 <br> Banco de Occidente <br>(.pdf)</small> </td>
+                                                <td class='doc-estudiante'>
+                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                </td>
+                                                <td>
+                                                    <span id='sub-doc-13' class="badge badge-danger">Sin subir</span>
+                                                </td>
+                                            </tr>
+                                            <tr codigo='14'>
+                                                <td> <small>Fotografía Ovalada (1) <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -447,22 +460,10 @@
                                                     <span id='sub-doc-14' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            <tr codigo='14'>
-                                                <td> <small>Timbre de Contratación L. 100.00 <br> (.pdf)</small> </td>
-                                                <td class='doc-estudiante'>
-                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
-                                                </td>
-                                                <td>
-                                                    <span id='sub-doc-15' class="badge badge-danger">Sin subir</span>
-                                                </td>
-                                            </tr>
                                             
+                                           
                                             <tr codigo='15' class='docs-excelencia' hidden>
-
-                                                <td> <small>Constancia de Conducta y Mención Honorífica firmada por Coordinador <br>(.pdf)</small> </td>
+                                                <td> <small>Constancia de Conducta y Mención Honrífica por el Coordinador <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
@@ -470,11 +471,22 @@
                                                     <button class="btn btn-info btn-sm subir">Subir</button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-17' class="badge badge-success">Sin subir</span>
+                                                    <span id='sub-doc-16' class="badge badge-success">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            
                                             <tr codigo='16' class='docs-excelencia'>
+                                                <td> <small>Solicitud de Honores Académicos por Estudiante <br>(.pdf)</small> </td>
+                                                <td class='doc-estudiante'>
+                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                </td>
+                                                <td>
+                                                    <span id='sub-doc-17' class="badge badge-danger">Sin subir</span>
+                                                </td>
+                                            </tr>
+                                            <tr codigo='17' class='docs-excelencia'>
                                                 <td> <small>Justificación de Mención Honorífica <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
@@ -486,20 +498,7 @@
                                                     <span id='sub-doc-18' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-
-                                            <tr codigo='17' class='docs-excelencia'>
-                                                <td> <small> <div class="text-center"> Solicitud de Honores Académicos <br> </div><br><div style="text-align: left"><ul id='lista-otros'></ul></div></small> </td>
-                                                <td class='doc-estudiante'>
-                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
-                                                </td>
-                                                <td>
-                                                    <span id='sub-doc-16' class="badge badge-danger">Sin subir</span>
-                                                </td>
-                                            </tr>
-
+                                            
                                         </tbody>
                                 </table>
                                 

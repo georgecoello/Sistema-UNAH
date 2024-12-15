@@ -8,8 +8,12 @@
     
     //Instantiation and passing `true` enables exceptions
     $correo = $_POST["correo"];
+    $mensajePersonalizado = $_POST["mensaje"] ?? ''; // Mensaje opcional
 
     $message = file_get_contents('../../Resources/mail/mail-validacion.html');
+
+    $message = str_replace('{{mensaje_personalizado}}', htmlspecialchars($mensajePersonalizado), $message);
+
     $mail = new PHPMailer(true);
 
     try {

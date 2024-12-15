@@ -16,12 +16,13 @@
         $nombre_archivo = '/'.$cuenta;   
 
         //ASIGANMOS EL NOMBRE AL DOCUMENTO SEGUN SEA SU CODIGO
+
         if($codigo == "1"){
             $nombre_archivo.="_Constancia_verificacion_nombre";
         }
 
         if($codigo == "2"){
-            $nombre_archivo.="_Copia_identidad";
+            $nombre_archivo.="_Copia_DNI";
         }
 
         if($codigo == "3"){
@@ -29,7 +30,7 @@
         }
 
         if($codigo == "4"){
-            $nombre_archivo.="_Constancia_Trabajo_Social_Comunitario";
+            $nombre_archivo.="_Constancia_VOAE";
         }
 
         if($codigo == "5"){
@@ -37,11 +38,11 @@
         }
 
         if($codigo == "6"){
-            $nombre_archivo.="_Solicitud_Examen_Himno";
+            $nombre_archivo.="_Solicitud_Examen_Himno_Aprobacion";
         }
 
         if($codigo == "7"){
-            $nombre_archivo.="_Solicitud_Extension_Tituki";
+            $nombre_archivo.="_Solicitud_Extension_Titulo";
         }
 
         if($codigo == "8"){
@@ -65,11 +66,11 @@
         }
 
         if($codigo == "13"){
-            $nombre_archivo.="_Foto_Ovalada";
+            $nombre_archivo.="_Timbre_Contratacion";
         }
 
         if($codigo == "14"){
-            $nombre_archivo.="_Timbre_Contratacion";
+            $nombre_archivo.="_Fotografia_Ovalada";
         }
 
         if($codigo == "15"){
@@ -77,17 +78,22 @@
         }
 
         if($codigo == "16"){
-            $nombre_archivo.="_Justificacion_Mencion_Honorifica";
+            $nombre_archivo.="_Solicitud_Honores_Academicos";
         }
 
         if($codigo == "17"){
-            $nombre_archivo.="_Solicitud_Honores_Academicos";
+            $nombre_archivo.="_Justificacion_Mencion_Honorifica";
         }
+
 
         $nombre_archivo.= '.'.$extension;                   //AGREGAMOS LA EXTENSION AL ARCHIVO
 
 
         $ruta_final = $BASEPATHEXPEDIENTES.''.$ruta .''. $nombre_archivo;           //OBTENEMOS LA RUTA FINAL CON EL DIRECTORIO Y DOCUMENTO
+
+        $ruta_final_base = $ruta .''. $nombre_archivo;                              //RUTA QUE GUARDAREMOS EN BASE DE DATOS SIN EL BASEPATHEXPEDIENTE
+
+
 
         /**VALIDAMOS QUE EL DOCUMENTO NO TENGA NINGUN ERROR */
         if ( 0 < $_FILES['file']['error'] ) {
@@ -100,24 +106,22 @@
 
             unlink($ruta_final);
 
+        }else{
+            //SE ALMACENARA EN LA BASE DE DATOS SOLO CUANDO SEA LA PRIMERA VEZ QUE SE CREA EL FICHERO
+
+            $sp = "call SP_GUARDARDOCUMENTO('$ruta_final_base','$id_solicitud', '$codigo');";
+            $query = mysqli_query($connection, $sp);
+
+            if (!$query) {   
+                echo 'Error';
+                die;
+            }
+
         }
-            
-        //SE ALMACENARA EN LA BASE DE DATOS SOLO CUANDO SEA LA PRIMERA VEZ QUE SE CREA EL FICHERO
-
-        $sp = "call SP_CAMBAIRESTADODOCINVALIDO('$id_solicitud', '$codigo');";
-        $query = mysqli_query($connection, $sp);
-
-        if (!$query) {   
-            echo 'Error';
-            die;
-        }
-
-        
 
         //SUBIMOS EL DOCUMENTO A NUESTRO SERVER 
         $resultado = move_uploaded_file($documento["tmp_name"], $ruta_final);
         @chmod($ruta_final, 0777);
-        
         if ($resultado){
             echo 'Exito';
         } else {

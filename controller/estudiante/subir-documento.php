@@ -22,7 +22,7 @@
         }
 
         if($codigo == "2"){
-            $nombre_archivo.="_Copia_identidad";
+            $nombre_archivo.="_Copia_DNI";
         }
 
         if($codigo == "3"){
@@ -30,7 +30,7 @@
         }
 
         if($codigo == "4"){
-            $nombre_archivo.="_Constancia_Trabajo_Social_Comunitario";
+            $nombre_archivo.="_Constancia_VOAE";
         }
 
         if($codigo == "5"){
@@ -38,11 +38,11 @@
         }
 
         if($codigo == "6"){
-            $nombre_archivo.="_Solicitud_Examen_Himno";
+            $nombre_archivo.="_Solicitud_Examen_Himno_Aprobacion";
         }
 
         if($codigo == "7"){
-            $nombre_archivo.="_Solicitud_Extension_Tituki";
+            $nombre_archivo.="_Solicitud_Extension_Titulo";
         }
 
         if($codigo == "8"){
@@ -66,11 +66,11 @@
         }
 
         if($codigo == "13"){
-            $nombre_archivo.="_Foto_Ovalada";
+            $nombre_archivo.="_Timbre_Contratacion";
         }
 
         if($codigo == "14"){
-            $nombre_archivo.="_Timbre_Contratacion";
+            $nombre_archivo.="_Fotografia_Ovalada";
         }
 
         if($codigo == "15"){
@@ -78,11 +78,11 @@
         }
 
         if($codigo == "16"){
-            $nombre_archivo.="_Justificacion_Mencion_Honorifica";
+            $nombre_archivo.="_Solicitud_Honores_Academicos";
         }
 
         if($codigo == "17"){
-            $nombre_archivo.="_Solicitud_Honores_Academicos";
+            $nombre_archivo.="_Justificacion_Mencion_Honorifica";
         }
 
 
