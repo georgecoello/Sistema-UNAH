@@ -125,6 +125,12 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                     <a href="revisar-expediente-repetido.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Solicitudes repetidas</strong> </small></a>
                                 </div>
                             </div> 
+                            <div class="row">
+                                <div class="col">
+                                    <a href="historialObservaciones.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Historial de Observaciones</strong> </small></a>
+                                </div>
+                                
+                            </div> 
                         </div>
                     <div class="col-1"></div>
                 </div>

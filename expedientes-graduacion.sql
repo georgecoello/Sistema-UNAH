@@ -57,6 +57,15 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_BUSCARCITAS` (IN `rol_coor` INT,
 
 END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_BUSCAROBSERVACIONES` (IN `rol_coor` INT, IN `buscador` VARCHAR(45))  BEGIN
+
+	SELECT est.id_estudiante, u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, com.id_comentario_informacion, com.comentario
+	FROM ((comentario_informacion as com INNER JOIN estudiante AS est ON com.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario)
+	WHERE coord.id_rol = rol_coor AND (u_est.nombres_usuario LIKE buscador OR u_est.apellidos_usuario LIKE buscador OR est.numero_cuenta_estudiante LIKE buscador OR com.id_comentario_informacion LIKE buscador OR com.comentario LIKE buscador)
+    ORDER BY com.id_comentario_informacion DESC;
+
+END$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_BUSCARESTUDIANTESINDOC` (IN `id_rol` INT, IN `buscador` VARCHAR(45), IN `estado` TINYINT)  BEGIN
 	SELECT estudiante.id_estudiante, usuario.nombres_usuario, usuario.apellidos_usuario, estudiante.numero_cuenta_estudiante FROM (estudiante INNER JOIN usuario ON estudiante.id_usuario = usuario.id_usuario)
 	WHERE estudiante.estado_informacion=1 AND estudiante.id_carrera=id_rol AND estudiante.estado_documento_descarga=estado AND (usuario.nombres_usuario LIKE buscador OR usuario.apellidos_usuario LIKE buscador OR estudiante.numero_cuenta_estudiante LIKE buscador)
@@ -290,7 +299,7 @@ END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTCITAS` (IN `numero_registros` INT, IN `offset_registros` INT, IN `rol_coor` INT)  BEGIN
 
-	SELECT est.id_estudiante, u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, cita.fecha_cita   
+	SELECT est.id_estudiante, u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, u_est.correo_usuario, cita.fecha_cita   
 	FROM (((cita INNER JOIN estudiante AS est ON cita.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) INNER JOIN usuario AS coord ON coord.id_usuario = cita.id_usuario)
 	WHERE coord.id_rol = rol_coor
     ORDER BY cita.id_cita DESC
@@ -298,9 +307,19 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTCITAS` (IN `numero_regist
 
 END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTOBSERVACIONES` (IN `numero_registros` INT, IN `offset_registros` INT, IN `rol_coor` INT)  BEGIN
+
+	SELECT est.id_estudiante, u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, obs.id_comentario_informacion, obs.comentario
+	FROM (((comentario_informacion as obs INNER JOIN estudiante AS est ON obs.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) INNER JOIN usuario AS coord ON coord.id_usuario = u_est.id_usuario)
+	WHERE coord.id_rol = rol_coor
+    ORDER BY obs.id_comentario_informacion DESC
+	LIMIT numero_registros OFFSET offset_registros;
+
+END$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTCITASEXCEL` (IN `rol_coor` INT, IN `fecha_buscar` VARCHAR(45))  BEGIN
 
-	SELECT u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, cita.fecha_cita   
+	SELECT u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, u_est.correo_usuario, cita.fecha_cita   
 	FROM (((cita INNER JOIN estudiante AS est ON cita.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) INNER JOIN usuario AS coord ON coord.id_usuario = cita.id_usuario)
 	WHERE coord.id_rol = rol_coor AND cita.fecha_cita LIKE fecha_buscar
     ORDER BY cita.fecha_cita ASC;
@@ -511,6 +530,14 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_NUMEROCITAS` (IN `rol_coor` INT)
 
 	SELECT count(*) as citas
 	FROM (((cita INNER JOIN estudiante AS est ON cita.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) INNER JOIN usuario AS coord ON coord.id_usuario = cita.id_usuario)
+	WHERE coord.id_rol = rol_coor;
+
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_NUMEROBSERVACIONES` (IN `rol_coor` INT)  BEGIN
+
+	SELECT count(*) as comentarios
+	FROM ((comentario_informacion INNER JOIN estudiante AS est ON comentario_informacion.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) 
 	WHERE coord.id_rol = rol_coor;
 
 END$$

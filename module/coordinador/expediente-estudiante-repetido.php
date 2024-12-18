@@ -130,6 +130,12 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                     <a href="revisar-expediente-repetido.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Solicitudes repetidas</strong> </small></a>
                                 </div>
                             </div> 
+                            <div class="row">
+                                <div class="col">
+                                    <a href="historialObservaciones.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Historial de Observaciones</strong> </small></a>
+                                </div>
+                                
+                            </div> 
                         </div>
                     <div class="col-1"></div>
                 </div>
@@ -281,7 +287,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                         </thead>
                                         <tbody>
                                             <tr codigo='1'>
-                                                <td> <small class="nombre-doc"> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
+                                            <td> <small> Constancia de Verificación de Nombre <br> Fotografía Ovalada Pegada <br> (.pdf) </small></td><td> <small class="nombre-doc"> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-1' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-1' target="_blank">Ver</a>
@@ -296,7 +302,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='2'>
-                                                <td> <small class="nombre-doc">Copia de Identidad, derecho y reverso en la misma pagina <br>(.pdf)</small> </td>
+                                                <td> <small>Copia de DNI <br> (Ambos lados) <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-2' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-2' target="_blank">Ver</a>
@@ -310,7 +316,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='3' hidden>
-                                                <td> <small class="nombre-doc">Certificación de calificaciones original (Oficina de Registro)<br>(.pdf)</small> </td>
+                                                <td> <small> Certificado de Calificaciones <br> (Original)<br> (.pdf) </small></td><td> <small class="nombre-doc">Certificación de calificaciones original (Oficina de Registro)<br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-3' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-3' target="_blank">Ver</a>
@@ -325,7 +331,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='4'>
-                                                <td> <small class="nombre-doc"> Constancia de horas refrendada por la VOAE <br>(.pdf)</small> </td>
+                                                <td> <small> Constancias de Horas Artículo 140 <br> VOAE <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-4' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-4' target="_blank">Ver</a>
@@ -339,7 +345,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='5' hidden>
-                                                <td> <small class="nombre-doc">  Constancia de Solvencia de biblioteca <br>(.pdf) </small></td>
+                                                <td> <small> Constancia de Práctica Profesional Laboral<br>(.pdf)</small></td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-5' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-5' target="_blank">Ver</a>
@@ -353,7 +359,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='6'>
-                                                <td> <small class="nombre-doc"> Constancia Finalización de Práctica Profesional <br>(.pdf)</small></td>
+                                                <td> <small> Solicitud de Realización del Himno y su Aprobación<br>(.pdf)</small></td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-6' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-6' target="_blank">Ver</a>
@@ -367,7 +373,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='7'>
-                                                <td> <small class="nombre-doc">Solicitud de realización del examen del Himno Nacional y su aprobación <br>(.pdf)</small> </td>
+                                                <td> <small>Solicitud de Extensión de Título <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-7' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-7' target="_blank">Ver</a>
@@ -381,7 +387,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='8'>
-                                                <td> <small class="nombre-doc">Solicitud de extensión de títulos a la secretaría general<br>(.pdf)</small> </td>
+                                                <td> <small>Copia del Título de Educación Media <br> Ambos Lados <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-8' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-8' target="_blank">Ver</a>
@@ -395,7 +401,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='9' hidden>
-                                                <td> <small class="nombre-doc"> Constancia de Unidades Valorativas <br>(.pdf)</small></td>
+                                                <td> <small>Boleta de Pago de Carnet de Estudiante<br> L. 30.00 <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-9' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-9' target="_blank">Ver</a>
@@ -409,7 +415,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='10'>
-                                                <td> <small class="nombre-doc"> Titulo secundaria, copia revés y derecho <br>(.pdf)</small> </td>
+                                                <td> <small> Boleta de Pago de Trámites de Graduación <br> L. 4,000.00 <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-10' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-10' target="_blank">Ver</a>
@@ -423,7 +429,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='11'>
-                                                <td> <small class="nombre-doc"> Boleta de Pago derechos de Graduación De Licenciatura <br> (L.4000.00, código de pago 303) <br>(.pdf)</small></td>
+                                                <td> <small> Boleta de Pago de Entega de Título por Ventanilla <br> L.2,500.00 <br>(.pdf)</small></td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-11' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-11' target="_blank">Ver</a>
@@ -437,7 +443,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='12'>
-                                                <td> <small class="nombre-doc">Boleta de pago de carnet (L.30, código de pago 202) <br>(.pdf)</small> </td>
+                                                <td> <small>Solvencia de Registro <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-12' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-12' target="_blank">Ver</a>
@@ -451,7 +457,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='13'>
-                                                <td> <small class="nombre-doc">Timbre de L100.00 Banco de Occidente <br>(.pdf)</small> </td>
+                                                <td> <small>Timbre de Contratación L. 100.00 <br> Banco de Occidente <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-13' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-13' target="_blank">Ver</a>
@@ -465,7 +471,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='14'>
-                                                <td> <small class="nombre-doc">2 fotos Ovales B/N con traje formal, 2 fotos tamaño carné a color <br>(.pdf)</small> </td>
+                                                <td> <small>Fotografía Ovalada (1) <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-14' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-14' target="_blank">Ver</a>
@@ -479,7 +485,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='15'>
-                                                <td> <small class="nombre-doc">Solvencia de Registro<br> (.pdf)</small> </td>
+                                                <td> <small>Constancia de Conducta y Mención Honrífica por el Coordinador <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-15' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-15' target="_blank">Ver</a>
@@ -493,7 +499,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='16'>
-                                            <td> <small class="nombre-doc"> Otros:<br><div style="text-align: left"><ul id='lista-otros'></ul></div></small> </td>
+                                                <td> <small>Solicitud de Honores Académicos por Estudiante <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-16' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-16' target="_blank">Ver</a>
@@ -507,7 +513,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                             </tr>
                                             <tr codigo='17' class='docs-excelencia' hidden>
-                                                <td> <small class="nombre-doc">Constancia de Conducta <br>(.pdf)</small> </td>
+                                                <td> <small>Justificación de Mención Honorífica <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-17' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-17' target="_blank">Ver</a>
@@ -518,21 +524,6 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 </td>
                                                 <td>
                                                     <textarea class="form-control" id="comentario-17" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='18' class='docs-excelencia'>
-                                                <td> <small class="nombre-doc">Formulario para extensión honores académicos <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-18' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-18' target="_blank">Ver</a>
-
-                                                </td>
-                                                <td id='doc-val-18'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-18" rows="2" disabled></textarea>
                                                 </td>
                                             </tr>
                                             
