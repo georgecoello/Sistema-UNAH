@@ -4,9 +4,8 @@
 
     $limit = $_GET["limit"];
     $offset = $_GET["offset"];
-    $rol = $_GET["rol"];
 
-    $sp = "call SP_GETLISTOBSERVACIONES('$limit','$offset','$rol');";
+    $sp = "call SP_GETLISTOBSERVACIONES('$limit','$offset');";
 
     $query = mysqli_query($connection, $sp);
 

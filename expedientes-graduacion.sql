@@ -307,11 +307,10 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTCITAS` (IN `numero_regist
 
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTOBSERVACIONES` (IN `numero_registros` INT, IN `offset_registros` INT, IN `rol_coor` INT)  BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTOBSERVACIONES` (IN `numero_registros` INT, IN `offset_registros` INT)  BEGIN
 
 	SELECT est.id_estudiante, u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, obs.id_comentario_informacion, obs.comentario
 	FROM (((comentario_informacion as obs INNER JOIN estudiante AS est ON obs.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) INNER JOIN usuario AS coord ON coord.id_usuario = u_est.id_usuario)
-	WHERE coord.id_rol = rol_coor
     ORDER BY obs.id_comentario_informacion DESC
 	LIMIT numero_registros OFFSET offset_registros;
 

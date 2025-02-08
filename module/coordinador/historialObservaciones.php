@@ -150,7 +150,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
+                                    <a href="citas.php" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
                                 </div>
                             </div> 
                         </div>
@@ -560,7 +560,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
     <script src="../../Resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../Resources/js/toastr.js"></script>
     <script src="../../Resources/js/responsive-paginate.js"></script>
-    <script src="../../Resources/js/citas.js"></script>
+    <script src="../../Resources/js/observaciones-coord.js"></script>
 
     <script type="text/javascript" src="../../Resources/datatables/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../Resources/datatables/dataTables.bootstrap4.min.js"></script>

@@ -196,21 +196,17 @@ function numeroEstudiantes(){
 
 /**FUNCION PARA CREAR LA PAGINACION */
 function crearPaginacion(estudiantes){
-   var cantidad_est = parseInt(estudiantes);
-   var numero_paginas = Math.ceil(cantidad_est/LIMIT_STUDENTS_TABLE);
+    var cantidad_est = parseInt(estudiantes);
+    var numero_paginas = Math.ceil(cantidad_est / LIMIT_STUDENTS_TABLE);
 
-
-   /**PLUGUIN PARA LA CREACION DE PAGINACION RESPONSIVE */
-   $('#paginacion').twbsPagination({
-       totalPages: numero_paginas,
-       visiblePages: 5,
-       onPageClick: function (event, page) {
-
-           var offset = (page-1)*LIMIT_STUDENTS_TABLE;
-   
-           mostrarEstudiantes(LIMIT_STUDENTS_TABLE,offset);
-       }
-   });
+    $('#paginacion').twbsPagination({
+        totalPages: numero_paginas,
+        visiblePages: 5,
+        onPageClick: function (event, page) {
+            var offset = (page - 1) * LIMIT_STUDENTS_TABLE;
+            mostrarEstudiantes(LIMIT_STUDENTS_TABLE, offset);
+        }
+    });
    
 };
 
@@ -220,8 +216,6 @@ function mostrarEstudiantes(limiter, offset){
    const getData = {
        limit: limiter,
        offset: offset,
-       rol: ROL_COORDINADOR,
-       estado_info: ESTADO_INFO_ESTUDIANTE
    }
 
    $.get("../../controller/coordinador/listaObservaciones.php", getData, function (e) {
@@ -230,21 +224,20 @@ function mostrarEstudiantes(limiter, offset){
            let template="";
 
            estudiante.forEach(estudiante => {
-               template +=`
-                   <tr user-id="${estudiante.id_estudiante}" scope="row">
-                       <th>${estudiante.id_estudiante}</th>
-                       <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
-                       <td>${estudiante.numero_cuenta}</td>
-                       <td class="idComentario">${comentario_informacion.id_comentario_informacion}</td>
-                       <td>
-                       <td class="comentario">${comentario_informacion.id_comentario_informacion}</td>
-                       <td>
-                           <button class="btn btn-success btn-sm cambiar-observacion" data-toggle="modal" data-target="#cambiar-observacion">
-                               Cambiar
-                           </button>
-                       </td>
-                   </tr>
-               `
+                template +=`
+                <tr user-id="${estudiante.id}" scope="row">
+                    <th>${estudiante.id}</th>
+                    <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
+                    <td>${estudiante.numero_cuenta_estudiante}</td>
+                    <td class="idComentario">${comentario_informacion.id_comentario_informacion}</td>
+                    <td class="comentario">${comentario_informacion.comentario}</td>
+                    <td>
+                        <button class="btn btn-success btn-sm cambiar-observacion" data-toggle="modal" data-target="#cambiar-observacion">
+                            Cambiar
+                        </button>
+                    </td>
+                </tr>
+            `
            });
            $("#estudiantes").html(template);
    });
@@ -293,21 +286,20 @@ $(document).on("click", "#ir-buscar", function(){
            let template="";
 
            estudiante.forEach(estudiante => {
-               template +=`
-                   <tr user-id="${estudiante.id_estudiante}" scope="row">
-                       <th>${estudiante.id_estudiante}</th>
-                       <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
-                       <td>${estudiante.numero_cuenta}</td>
-                       <td class="idComentario">${comentario_informacion.id_comentario_informacion}</td>
-                       <td>
-                       <td class="comentario">${comentario_informacion.id_comentario_informacion}</td>
-                       <td>
-                           <button class="btn btn-success btn-sm cambiar-observacion" data-toggle="modal" data-target="#cambiar-observacion">
-                               Cambiar
-                           </button>
-                       </td>
-                   </tr>
-               `
+            template +=`
+                <tr user-id="${estudiante.id}" scope="row">
+                    <th>${estudiante.id}</th>
+                    <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
+                    <td>${estudiante.numero_cuenta_estudiante}</td>
+                    <td class="idComentario">${comentario_informacion.id_comentario_informacion}</td>
+                    <td class="comentario">${comentario_informacion.comentario}</td>
+                    <td>
+                        <button class="btn btn-success btn-sm cambiar-observacion" data-toggle="modal" data-target="#cambiar-observacion">
+                            Cambiar
+                        </button>
+                    </td>
+                </tr>
+            `
            });
            $("#estudiantes").html(template);
            

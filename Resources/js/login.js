@@ -80,7 +80,7 @@ $("#login-form").submit(function (e) {
 
                         toastr["warning"]("La contraseña y correo electrónico no coinciden");
                         $('#entrar').disabled=false;
-                    
+
                     } else {
                         
                         /**VALIDA QUE EL USUARIO ESTE ACTIVO Y NO DESACTIVADO*/
@@ -97,19 +97,19 @@ $("#login-form").submit(function (e) {
                     
                                 if( e == "1"){
 
-                                    window.location="../../module/admin/gestion-usuarios.php";
+                                    window.location="/expedientesGraduacion-vs/module/admin/gestion-usuarios.php";
                                     
                                     
                                 }
                                 if( e == "2"){
 
-                                    window.location="../../module/coordinador/validar-info-estudiante.php";
+                                    window.location="/expedientesGraduacion-vs/module/coordinador/validar-info-estudiante.php";
                                     
                                     
                                 }
                                 if( e == "3"){
 
-                                    window.location="../../module/estudiante/estado-informacion.php";
+                                    window.location="/expedientesGraduacion-vs/module/estudiante/estado-informacion.php";
                                     
                                     
                                 }
