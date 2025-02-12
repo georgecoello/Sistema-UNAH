@@ -325,7 +325,7 @@
                                             <tr>
                                                 <td class="doc-estudiante" colspan="4">
                                                 <small>En caso de tener más de una constancia de Horas Artículo 140 (VOAE), seleccione el botón para ingresarlas, y luego suba el documento generado.</small><br>
-                                                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#activityModal" style="color: black;">
+                                                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#activityModal" style="color: white;">
                                                         <small>Subir archivos Horas Artículo 140</small>
                                                     </button>
                                                 </td>
@@ -497,7 +497,7 @@
                                                     <button class="btn btn-info btn-sm subir">Subir</button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-18' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-17' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
                                             
@@ -715,14 +715,12 @@
         // Evento para agregar más archivos
         document.getElementById('addFileButton').addEventListener('click', addFileForm);
     </script>
-
-    <script src="../../Resources/js/creacion-expediente.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="../../Resources/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
-    <script src="../../Resources/jquery/jquery.min.js"></script>
-    <script src="../../Resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../Resources/js/toastr.js"></script>
+    <script src="../../Resources/js/creacion-expediente.js"></script>
 
     <script>
         $("#menu-toggle").click(function(e) {

@@ -1,24 +1,23 @@
 /**
  * CODIGOS DE DOCUMENTOS
  * 
- * 1: Constancia de Verificación de Nombre
- * 2: Copia de Identidad
- * 3: Certificacion de notas
- * 4: Constancia de horas refrendada por la VOAE 
- * 5: Constancia de Solvencia de biblioteca
- * 6: Constancia de Aprobación de Himno
- * 7: Constancia de finalización de Práctica Profesional
- * 8: Carta de egresado
- * 9: Solicitud de extensión de títulos a la secretaría general
- * 10: Constancia de Unidades Valorativas
- * 11: Boleta de Pago derechos de Graduación De Licenciatura
- * 12: Boleta de pago de carnet
- * 13: Timbre de L100.00 Banco de Occidente
- * 14: Titulo secundaria, copia reves y derecho
- * 15: 2 fotos Ovales B/N con traje formal, 4 fotos tamaño carné a color 
- * 16: Solvencia de Registro
- * 17: Constancia de Conducta
- * 18: Formulario para extensión honores académicos
+ * 1: Constancia de Verificación de nombre 
+ * 2: Copia de DNI 
+ * 3: Certificado de calificaciones 
+ * 4: Constancia de Trabajo Social 
+ * 5: Constancia de pŕactica profesional 
+ * 6: Solicitud de realización del himno y su aprobación 
+ * 7: Solicitud de extensión de título 
+ * 8: Copia de título de educación media 
+ * 9: Boleta de pago de carnet de estudiante 
+ * 10: Boleta de pago trámites de graduacion 
+ * 11: Boleta de pago de entrega de titulo por ventanilla
+ * 12: Solvencia de registro 
+ * 13: Timbre de contratación 
+ * 14: Fotografía ovalada 
+ * 15: Constancia de Conducta y Mención Honrífica por el Coordinador
+ * 16: Solicitud de Honores Académicos por Estudiante
+ * 17: Justificación de Mención Honorífica
  * 
  */
 
