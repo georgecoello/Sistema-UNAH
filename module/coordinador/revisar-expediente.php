@@ -144,6 +144,12 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                 </div>
                                 
                             </div> 
+                            <div class="row">
+                                <div class="col">
+                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Resumen</strong> </small></a>
+                                </div>
+                                
+                            </div> 
                         </div>
                     <div class="col-1"></div>
                 </div>

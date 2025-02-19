@@ -309,7 +309,7 @@
                                                 
                                             </tr>
                                             <tr codigo='2'>
-                                                <td> <small>Copia de Identidad, derecho y reverso en la misma pagina <br>(.pdf)</small> </td>
+                                                <td> <small>Copia de DNI <br>Ambos lados<br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-2' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -324,7 +324,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='3' hidden>
-                                                <td> <small>Certificación de calificaciones original (Oficina de Registro) <br>(.pdf)</small> </td>
+                                                <td> <small>Certificación de calificaciones <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-3' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -339,7 +339,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='4'>
-                                                <td> <small> Constancia de horas refrendada por la VOAE <br>(.pdf)</small> </td>
+                                                <td> <small> Constancia de Horas Artículo 140 <br>VOAE <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-4' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -354,7 +354,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='5' hidden>
-                                                <td> <small>  Constancia de Solvencia de biblioteca <br>(.pdf) </small></td>
+                                                <td> <small>  Constancia de Práctica Profesional <br>(.pdf) </small></td>
                                                 <td>
                                                     <span id='sub-doc-5' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -369,7 +369,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='6'>
-                                                <td> <small> Constancia Finalización de Práctica Profesional <br>(.pdf)</small></td>
+                                                <td> <small> Solicitud de Realización del Himno y su Aprobación <br>(.pdf)</small></td>
                                                 <td>
                                                     <span id='sub-doc-6' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -384,7 +384,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='7'>
-                                                <td> <small>Solicitud de realización del examen del Himno Nacional y su aprobación <br>(.pdf)</small> </td>
+                                                <td> <small>Solicitud de Extensión de Título <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-7' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -399,7 +399,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='8'>
-                                                <td> <small>Solicitud de extensión de títulos a la secretaría general<br>(.pdf)</small> </td>
+                                                <td> <small>Copia de Título de Educación Media <br>Ambos lados <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-8' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -414,7 +414,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='9' hidden>
-                                                <td> <small> Constancia de Unidades Valorativas <br>(.pdf)</small></td>
+                                                <td> <small>Boleta de Pago de Carnet de Estudiante <br> L.30.00 <br>(.pdf)</small></td>
                                                 <td>
                                                     <span id='sub-doc-9' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -429,7 +429,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='10'>
-                                                <td> <small> Titulo secundaria, copia revés y derecho <br>(.pdf)</small> </td>
+                                                <td> <small> Boleta de Pago de Trámites de Graduación <br> L.4000.00 <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-10' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -444,7 +444,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='11'>
-                                                <td> <small> Boleta de Pago derechos de Graduación De Licenciatura <br> (L.4000.00, código de pago 303) <br>(.pdf)</small></td>
+                                                <td> <small> Boleta de Pago dde Enrega de Título por Ventanilla <br> L.2500.00 <br>(.pdf)</small></td>
                                                 <td>
                                                     <span id='sub-doc-11' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -459,7 +459,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='12'>
-                                                <td> <small>Boleta de pago de carnet (L.30, código de pago 202) <br>(.pdf)</small> </td>
+                                                <td> <small>Solvencia de Registro <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-12' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -474,7 +474,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='13'>
-                                                <td> <small>Timbre de L100.00 Banco de Occidente <br>(.pdf)</small> </td>
+                                                <td> <small>Timbre de Contratación L. 100 <br> Banco de Occidente <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-13' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -489,7 +489,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='14'>
-                                                <td> <small>2 fotos Ovales B/N con traje formal, 2 fotos tamaño carné a color <br>(.pdf)</small> </td>
+                                                <td> <small>Fotografía Ovalada (1) <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-14' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -503,8 +503,9 @@
                                                     <button class="btn btn-info btn-sm subir" id='btn-subir-14' hidden>Subir</button>
                                                 </td>
                                             </tr>
-                                            <tr codigo='15'>
-                                                <td> <small>Solvencia de Registro <br> (.pdf)</small> </td>
+                                            </tr>
+                                            <tr codigo='15' class='docs-excelencia' hidden>
+                                                <td> <small>Constancia de Conducta y Mención Honorífica por el Coordinador <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-15' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -518,8 +519,8 @@
                                                     <button class="btn btn-info btn-sm subir" id='btn-subir-15' hidden>Subir</button>
                                                 </td>
                                             </tr>
-                                            <tr codigo='16'>
-                                            <td> <small> <strong> Otros (Se pondrán en un mismo pdf todos los documentos que se piden a continuación): </strong><br><div style="text-align: left"><ul id='lista-otros'></ul></div></small> </td>
+                                            <tr codigo='16' class='docs-excelencia'>
+                                                <td> <small>Solicitud de Honores Académicos por Estudiante <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-16' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -533,8 +534,8 @@
                                                     <button class="btn btn-info btn-sm subir" id='btn-subir-16' hidden>Subir</button>
                                                 </td>
                                             </tr>
-                                            <tr codigo='17' class='docs-excelencia' hidden>
-                                                <td> <small>Constancia de Conducta <br>(.pdf)</small> </td>
+                                            <tr codigo='17' class='docs-excelencia'>
+                                                <td> <small>Justificación de Mención Honorífica <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-17' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -546,21 +547,6 @@
                                                 </td>
                                                 <td>
                                                     <button class="btn btn-info btn-sm subir" id='btn-subir-17' hidden>Subir</button>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='18' class='docs-excelencia'>
-                                                <td> <small>Formulario para extensión honores académicos <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <span id='sub-doc-18' class="badge badge-secondary">Sin revisar</span>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control comentario" id="comentario-18" rows="1" disabled></textarea>
-                                                </td>
-                                                <td class='doc-estudiante'>
-                                                    <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-info btn-sm subir" id='btn-subir-18' hidden>Subir</button>
                                                 </td>
                                             </tr>
                                             

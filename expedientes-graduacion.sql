@@ -307,11 +307,12 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTCITAS` (IN `numero_regist
 
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTOBSERVACIONES` (IN `numero_registros` INT, IN `offset_registros` INT)  BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GETLISTOBSERVACIONES` (IN `rol_usuario` VARCHAR(50), IN `buscador` VARCHAR(100), in `numero_registros` INT, IN `offset_registros` INT)  BEGIN
 
 	SELECT est.id_estudiante, u_est.nombres_usuario, u_est.apellidos_usuario, est.numero_cuenta_estudiante, obs.id_comentario_informacion, obs.comentario
-	FROM (((comentario_informacion as obs INNER JOIN estudiante AS est ON obs.id_estudiante = est.id_estudiante) INNER JOIN usuario AS u_est ON est.id_usuario = u_est.id_usuario) INNER JOIN usuario AS coord ON coord.id_usuario = u_est.id_usuario)
-    ORDER BY obs.id_comentario_informacion DESC
+	FROM comentario as obs
+	WHERE (u_est.nombres_usuario LIKE CONCAT('%', buscador, '%') OR u_est.apellidos_usuario LIKE CONCAT('%', buscador, '%') OR est.numero_cuenta_estudiante LIKE CONCAT('%', buscador,'%'))
+	ORDER BY obs.id_comentario_informacion ASC
 	LIMIT numero_registros OFFSET offset_registros;
 
 END$$

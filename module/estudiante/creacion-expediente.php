@@ -324,7 +324,8 @@
                                             </tr>
                                             <tr>
                                                 <td class="doc-estudiante" colspan="4">
-                                                <small>En caso de tener más de una constancia de Horas Artículo 140 (VOAE), seleccione el botón para ingresarlas, y luego suba el documento generado.</small><br>
+                                                <small><b>En caso de tener más de una constancia de Horas Artículo 140 (VOAE), seleccione el botón para ingresarlas, y luego suba el documento generado.</b></small><br>
+                                                <br>
                                                     <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#activityModal" style="color: white;">
                                                         <small>Subir archivos Horas Artículo 140</small>
                                                     </button>
@@ -462,9 +463,9 @@
                                                     <span id='sub-doc-14' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
-                                            
+
                                            
-                                            <tr codigo='15' class='docs-excelencia' hidden>
+                                            <tr codigo='15' class='docs-excelencia'>
                                                 <td> <small>Constancia de Conducta y Mención Honrífica por el Coordinador <br>(.pdf)</small> </td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
@@ -473,7 +474,7 @@
                                                     <button class="btn btn-info btn-sm subir">Subir</button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-16' class="badge badge-success">Sin subir</span>
+                                                    <span id='sub-doc-15' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
                                             <tr codigo='16' class='docs-excelencia'>
@@ -485,7 +486,7 @@
                                                     <button class="btn btn-info btn-sm subir">Subir</button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-17' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-16' class="badge badge-danger">Sin subir</span>
                                                 </td>
                                             </tr>
                                             <tr codigo='17' class='docs-excelencia'>
@@ -513,7 +514,7 @@
                     <div class="row pb-3">
                         <div class="col-4"></div>
                         <div class="col-4">
-                            <button type="button" style='border-radius: 5px;' class="btn btn-sm btn-success float-right add-user mt-3 mb-2 sombra-corta3 btn-block" id='enviar' disabled>Enviar Todo</button>          
+                            <button type="button" style='border-radius: 5px;' class="btn btn-sm btn-success float-right add-user mt-3 mb-2 sombra-corta3 btn-block" id='enviar' >Enviar Todo</button>          
                         </div>
                         <div class="col-4"></div>
                     

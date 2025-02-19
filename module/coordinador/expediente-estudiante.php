@@ -136,6 +136,12 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                 </div>
                                 
                             </div> 
+                            <div class="row">
+                                <div class="col">
+                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Resumen</strong> </small></a>
+                                </div>
+                                
+                            </div> 
                         </div>
                     <div class="col-1"></div>
                 </div>
@@ -286,7 +292,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                         </thead>
                                         <tbody>
                                         <tr codigo='1'>
-                                            <td> <small> Constancia de Verificación de Nombre <br> Fotografía Ovalada Pegada <br> (.pdf) </small></td><td> <small class="nombre-doc"> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
+                                            <td> <small class="nombre-doc"> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-1' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-1' target="_blank">Ver</a>
@@ -299,7 +305,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 <td>
                                                     <textarea class="form-control" id="comentario-1" rows="2" disabled></textarea>
                                                 </td>
-                                            </tr>
+                                        </tr>
                                             <tr codigo='2'>
                                                 <td> <small>Copia de DNI <br> (Ambos lados) <br>(.pdf)</small> </td>
                                                 <td>

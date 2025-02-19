@@ -161,14 +161,6 @@ $(document).on("click", "#cambiar-pass", function(){
                
        });
    }
-
-   
-
-   
-
-
-   
-
 });
 
 /**INICIALIZA TABLA Y PAGINADOR */
@@ -211,56 +203,33 @@ function crearPaginacion(estudiantes){
 };
 
 /**FUNCION PARA MOSTRAR ESTUDIANTES CON PAGINACION */
-function mostrarEstudiantes(limiter, offset){
-
-   const getData = {
-       limit: limiter,
-       offset: offset,
-   }
-
-   $.get("../../controller/coordinador/listaObservaciones.php", getData, function (e) {
-       
-           let estudiante = JSON.parse(e);
-           let template="";
-
-           estudiante.forEach(estudiante => {
-                template +=`
-                <tr user-id="${estudiante.id}" scope="row">
-                    <th>${estudiante.id}</th>
-                    <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
-                    <td>${estudiante.numero_cuenta_estudiante}</td>
-                    <td class="idComentario">${comentario_informacion.id_comentario_informacion}</td>
-                    <td class="comentario">${comentario_informacion.comentario}</td>
-                    <td>
-                        <button class="btn btn-success btn-sm cambiar-observacion" data-toggle="modal" data-target="#cambiar-observacion">
-                            Cambiar
-                        </button>
-                    </td>
-                </tr>
-            `
-           });
-           $("#estudiantes").html(template);
-   });
-}
-
-
-
-
-/**ABRE EL MODAL PARA CAMBIAR OBSERVACIÓN DEL ESTUDIANTE*/
-$(document).on("click", ".cambiar-observacion", function(){
-
-
-   let element = $(this)[0].parentElement.parentElement;       //OBTENEMOS EL ID
-   let id = $(element).attr("user-id");
-
-   let element_comentario = $(this)[0].parentElement.parentElement.getElementsByClassName("comentarios")[0].innerHTML;
-
-   $("#estudiante-id").val(id);
-   $("#comentarios").val(element_comentario);
-
-
-});
-
+function mostrarObservaciones(limiter, offset) {
+    const getData = {
+        limit: limiter,
+        offset: offset,
+        rol: ROL_COORDINADOR
+    }
+ 
+    $.get("../../controller/coordinador/listaObservaciones.php", getData, function (e) {
+        let estudiantes = JSON.parse(e);
+        let template = "";
+ 
+        estudiantes.forEach(estudiante => {
+            template += `
+                 <tr user-id="${estudiante.id_estudiante}">
+                     <th>${estudiante.id_estudiante}</th>
+                     <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
+                     <td>${estudiante.numero_cuenta_estudiante}</td>
+                     <td>${comentario_informacion.id_comentario_informacion}</td>
+                     <td>${comentario_informacion.comentario}</td>
+                 </tr>
+             `;
+        });
+ 
+        $("#estudiantes").html(template);
+    });
+ }
+ 
 
 /**BUSCADOR */
 $(document).on("click", "#ir-buscar", function(){

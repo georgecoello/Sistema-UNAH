@@ -1,34 +1,29 @@
 <?php
-
     include("../../Resources/lib/connection.php");
 
-    $limit = $_GET["limit"];
-    $offset = $_GET["offset"];
+    $rol = $_GET["rol"] ?? "";
+    $buscador = $_GET["buscador"] ?? "";
+    $numero_registros = $_GET["limite"] ?? 10; // Número de registros por página
+    $offset_registros = $_GET["offset"] ?? 0;  // Desde qué registro empezar
 
-    $sp = "call SP_GETLISTOBSERVACIONES('$limit','$offset');";
-
+    $sp = "CALL SP_GETLISTOBSERVACIONES($numero_registros, $offset_registros);";
     $query = mysqli_query($connection, $sp);
 
     if (!$query) {
-        echo json_encode("problema");
-    } else{
-        $json = array();
-        while($row = mysqli_fetch_array($query)){
-            $json[] = array(
+        echo json_encode(["error" => "Problema al ejecutar la consulta"]);
+    } else {
+        $json = [];
+        while ($row = mysqli_fetch_array($query)) {
+            $json[] = [
                 "id_estudiante" => $row["id_estudiante"],
                 "nombres_estudiante" => $row["nombres_usuario"],
                 "apellidos_estudiante" => $row["apellidos_usuario"],
                 "numero_cuenta" => $row["numero_cuenta_estudiante"],
-                "id_comentario_observacion" => $row["id_comentario_observacion"], 
                 "comentario" => $row["comentario"]
-            );
+            ];
         }
-
-        $json_string = json_encode($json);
-        echo $json_string;
-
+        echo json_encode($json);
     }
 
     cerrarConexion($connection);
-
 ?>

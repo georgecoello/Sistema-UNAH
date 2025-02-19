@@ -2,10 +2,11 @@
 
     include("../../Resources/lib/connection.php");
 
+    $limit = $_GET["limit"];
     $rol = $_GET["rol"];
-    $buscador = $_GET["buscador"];
+    $offset = $_GET["offset"];
 
-    $sp = "call SP_BUSCAROBSERVACIONES('$rol', '$buscador%');";
+    $sp = "call SP_LISTARROBSERVACIONES('$limit', '$offset',''$rol);";
 
     $query = mysqli_query($connection, $sp);
 

@@ -245,7 +245,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                 <div class="col-1"></div>
                 <div class="col-10">
                     <h3 class="bg-dark text-center" style="border-radius: 5px;">
-                        <p style="color:white;" id="numero-estudiantes">Historial de Observaciones</p>
+                        <p style="color:white;" id="numero-estudiantes">Tabla resumen de Expedientes</p>
                     </h3>
                 </div>
                 <div class="col-1"></div>
@@ -275,11 +275,9 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                         <table class="table table-sm table-hover table-striped text-center table-light" id="example">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th scope="col">ID Estudiante</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Número de Cuenta</th>
-                                    <th scope="col">ID Observación</th>
-                                    <th scope="col">Observación Realizada</th>
+                                    <th scope="col">Número de cuenta Estudiante</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Estado de Expediente</th>
                                 </tr>
                             </thead>
                             <tbody id="estudiantes">
@@ -553,8 +551,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
     <script src="../../Resources/jquery/jquery.min.js"></script>
     <script src="../../Resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../Resources/js/toastr.js"></script>
-    <script src="../../Resources/js/responsive-paginate.js"></script>
-    <script src="../../Resources/js/observaciones-coord.js"></script>
+
 
     <script type="text/javascript" src="../../Resources/datatables/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../Resources/datatables/dataTables.bootstrap4.min.js"></script>

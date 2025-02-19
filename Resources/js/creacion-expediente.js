@@ -247,7 +247,6 @@ function validarTodos(id_estudiante) {
     
     $.get("../../controller/estudiante/obtener-linksolicitud.php", {id_estudiante}, function (e) {
         let link = JSON.parse(e);
-        console.log(link);
         
         if(link == "Fallo"){
             toastr["warning"]("UPS! Ha ocurrido un error, intentelo de nuevo");
@@ -273,24 +272,18 @@ function validarTodos(id_estudiante) {
                 if( x == filasTabla){
                     toastr["success"]("Todos los documentos han sido subidos, se habilito el botón de envío");
                     $('#enviar').removeAttr("disabled");
-                } 
-
-            
-
+                }          
 
             }else{
                 $('#estado-exp').removeClass("disabled");
                 $('.subir').attr('disabled','disabled');
             }
             
-            
-
         }
 
     });
 
 }
-
 
 $(document).on("click", "#enviar", function(){
 
