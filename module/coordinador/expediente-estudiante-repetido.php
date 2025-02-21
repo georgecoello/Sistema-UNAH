@@ -293,7 +293,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                         </thead>
                                         <tbody>
                                             <tr codigo='1'>
-                                            <td> <small> Constancia de Verificación de Nombre <br> Fotografía Ovalada Pegada <br> (.pdf) </small></td><td> <small class="nombre-doc"> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
+                                            <td> <small> Constancia de Verificación de Nombre <br> (.pdf) </small></td><td> <small class="nombre-doc"> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-1' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-1' target="_blank">Ver</a>
@@ -467,7 +467,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-13' download="">Descargar</a>
                                                     <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-13' target="_blank">Ver</a>
-                                                </td>
+                                                    <td> <small>Timbre de Con</td>
                                                 <td id='doc-val-13'>
                                                     <button class="btn btn-success btn-sm si">Si</button>
                                                     <button class="btn btn-danger btn-sm no">No</button>
@@ -490,7 +490,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                     <textarea class="form-control" id="comentario-14" rows="2" disabled></textarea>
                                                 </td>
                                             </tr>
-                                            <tr codigo='15'>
+                                            <tr codigo='15' class="docs-excelencia">
                                                 <td> <small>Constancia de Conducta y Mención Honrífica por el Coordinador <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-15' download="">Descargar</a>
@@ -504,7 +504,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                     <textarea class="form-control" id="comentario-15" rows="2" disabled></textarea>
                                                 </td>
                                             </tr>
-                                            <tr codigo='16'>
+                                            <tr codigo='16' class="docs-excelencia">
                                                 <td> <small>Solicitud de Honores Académicos por Estudiante <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-16' download="">Descargar</a>
@@ -518,7 +518,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                     <textarea class="form-control" id="comentario-16" rows="2" disabled></textarea>
                                                 </td>
                                             </tr>
-                                            <tr codigo='17' class='docs-excelencia' hidden>
+                                            <tr codigo='17' class='docs-excelencia'>
                                                 <td> <small>Justificación de Mención Honorífica <br>(.pdf)</small> </td>
                                                 <td>
                                                     <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-17' download="">Descargar</a>

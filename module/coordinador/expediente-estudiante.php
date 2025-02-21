@@ -267,8 +267,8 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                         <div class="col-1"></div>
                         <div class="col-10">
                             <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12"><h5 class='text-muted'>Nombre: <?php echo $_GET["nombre"]; ?></h5></div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-12"><h5 class='float-right text-muted'>Cuenta: <?php echo $_GET["cuenta"]; ?></h5></div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-12"><h5>Nombre: <?php echo $_GET["nombre"]; ?></h5></div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-12"><h5 class='float-right'>Cuenta: <?php echo $_GET["cuenta"]; ?></h5></div>
                             </div>
                         </div>
                         <div class="col-1"></div>
@@ -306,231 +306,230 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                     <textarea class="form-control" id="comentario-1" rows="2" disabled></textarea>
                                                 </td>
                                         </tr>
-                                            <tr codigo='2'>
-                                                <td> <small>Copia de DNI <br> (Ambos lados) <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-2' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-2' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-2'>
+                                        <tr codigo='2'>
+                                            <td> <small class="nombre-doc">Copia de DNI <br> (Ambos lados) <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-2' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-2' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-2'>
                                                     <button class="btn btn-success btn-sm si">Si</button>
                                                     <button class="btn btn-danger btn-sm no">No</button>
                                                 </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-2" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='3' hidden>
-                                                <td> <small> Certificado de Calificaciones <br> (Original)<br> (.pdf) </small></td><td> <small class="nombre-doc">Certificación de calificaciones original (Oficina de Registro)<br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-3' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-3' target="_blank">Ver</a>
-
-                                                </td>
-                                                <td id='doc-val-3'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-3" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='4'>
-                                                <td> <small> Constancias de Horas Artículo 140 <br> VOAE <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-4' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-4' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-4'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-4" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='5' hidden>
-                                                <td> <small> Constancia de Práctica Profesional Laboral<br>(.pdf)</small></td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-5' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-5' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-5'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-5" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='6'>
-                                                <td> <small> Solicitud de Realización del Himno y su Aprobación<br>(.pdf)</small></td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-6' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-6' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-6'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-6" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='7'>
-                                                <td> <small>Solicitud de Extensión de Título <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-7' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-7' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-7'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-7" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='8'>
-                                                <td> <small>Copia del Título de Educación Media <br> Ambos Lados <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-8' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-8' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-8'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-8" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='9' hidden>
-                                                <td> <small>Boleta de Pago de Carnet de Estudiante<br> L. 30.00 <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-9' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-9' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-9'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-9" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='10'>
-                                                <td> <small> Boleta de Pago de Trámites de Graduación <br> L. 4,000.00 <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-10' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-10' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-10'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-10" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='11'>
-                                                <td> <small> Boleta de Pago de Entega de Título por Ventanilla <br> L.2,500.00 <br>(.pdf)</small></td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-11' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-11' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-11'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-11" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='12'>
-                                                <td> <small>Solvencia de Registro <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-12' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-12' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-12'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-12" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='13'>
-                                                <td> <small>Timbre de Contratación L. 100.00 <br> Banco de Occidente <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-13' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-13' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-13'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-13" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='14'>
-                                                <td> <small>Fotografía Ovalada (1) <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-14' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-14' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-14'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-14" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='15'>
-                                                <td> <small>Constancia de Conducta y Mención Honrífica por el Coordinador <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-15' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-15' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-15'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-15" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='16'>
-                                                <td> <small>Solicitud de Honores Académicos por Estudiante <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-16' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-16' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-16'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-16" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr codigo='17' class='docs-excelencia' hidden>
-                                                <td> <small>Justificación de Mención Honorífica <br>(.pdf)</small> </td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-17' download="">Descargar</a>
-                                                    <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-17' target="_blank">Ver</a>
-                                                </td>
-                                                <td id='doc-val-17'>
-                                                    <button class="btn btn-success btn-sm si">Si</button>
-                                                    <button class="btn btn-danger btn-sm no">No</button>
-                                                </td>
-                                                <td>
-                                                    <textarea class="form-control" id="comentario-17" rows="2" disabled></textarea>
-                                                </td>
-                                            </tr>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-2" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='3'>
+                                            <td> <small class="nombre-doc"> Certificado de Calificaciones <br> (Original)<br> (.pdf) </small></td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-3' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-3' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-3'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-3" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='4'>
+                                            <td> <small class="nombre-doc"> Constancias de Horas Artículo 140 <br> VOAE <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-4' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-4' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-4'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-4" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='5' hidden>
+                                            <td> <small class="nombre-doc"> Constancia de Práctica Profesional Laboral<br>(.pdf)</small></td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-5' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-5' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-5'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-5" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='6'>
+                                            <td> <small class="nombre-doc"> Solicitud de Realización del Himno y su Aprobación<br>(.pdf)</small></td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-6' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-6' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-6'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-6" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='7'>
+                                            <td> <small class="nombre-doc">Solicitud de Extensión de Título <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-7' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-7' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-7'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-7" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='8'>
+                                            <td> <small class="nombre-doc">Copia del Título de Educación Media <br> Ambos Lados <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-8' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-8' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-8'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-8" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='9' hidden>
+                                            <td> <small class="nombre-doc">Boleta de Pago de Carnet de Estudiante<br> L. 30.00 <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-9' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-9' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-9'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-9" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='10'>
+                                            <td> <small class="nombre-doc"> Boleta de Pago de Trámites de Graduación <br> L. 4,000.00 <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-10' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-10' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-10'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-10" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='11'>
+                                            <td> <small class="nombre-doc"> Boleta de Pago de Entega de Título por Ventanilla <br> L.2,500.00 <br>(.pdf)</small></td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-11' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-11' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-11'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-11" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='12'>
+                                            <td> <small class="nombre-doc">Solvencia de Registro <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-12' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-12' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-12'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-12" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='13'>
+                                            <td> <small class="nombre-doc">Timbre de Contratación L. 100.00 <br> Banco de Occidente <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-13' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-13' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-13'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-13" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='14'>
+                                            <td> <small class="nombre-doc">Fotografía Ovalada (1) <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-14' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-14' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-14'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-14" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='15' class='docs-excelencia' >
+                                            <td> <small class="nombre-doc">Constancia de Conducta y Mención Honrífica por el Coordinador <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-15' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-15' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-15'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-15" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='16' class='docs-excelencia' >
+                                            <td> <small class="nombre-doc">Solicitud de Honores Académicos por Estudiante <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-16' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-16' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-16'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-16" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr codigo='17' class='docs-excelencia' >
+                                            <td> <small class="nombre-doc">Justificación de Mención Honorífica <br>(.pdf)</small> </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info btn-sm" role="button" id='btn-descarga-17' download="">Descargar</a>
+                                                <a href="#" class="btn btn-secondary btn-sm" role="button" id='btn-ver-17' target="_blank">Ver</a>
+                                            </td>
+                                            <td id='doc-val-17'>
+                                                <button class="btn btn-success btn-sm si">Si</button>
+                                                <button class="btn btn-danger btn-sm no">No</button>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control" id="comentario-17" rows="2" disabled></textarea>
+                                            </td>
+                                        </tr>
                                             
                                         </tbody>
                                 </table>

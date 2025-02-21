@@ -287,7 +287,7 @@
                                         </thead>
                                         <tbody>
                                             <tr codigo='1'>
-                                                <td> <small> Constancia de Verificación de Nombre <br> Fotografía Ovalada Pegada <br> (.pdf) </small></td>
+                                                <td> <small> Constancia de Verificación de Nombre <br> (.pdf) </small></td>
                                                 <td class='doc-estudiante'>
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>

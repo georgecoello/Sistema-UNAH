@@ -323,8 +323,8 @@
                                                     <button class="btn btn-info btn-sm subir" id='btn-subir-2' hidden>Subir</button>
                                                 </td>
                                             </tr>
-                                            <tr codigo='3' hidden>
-                                                <td> <small>Certificación de calificaciones <br>(.pdf)</small> </td>
+                                            <tr codigo='3'>
+                                                <td> <small>Certificado de Calificaciones <br> (Original) <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-3' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -429,7 +429,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='10'>
-                                                <td> <small> Boleta de Pago de Trámites de Graduación <br> L.4000.00 <br>(.pdf)</small> </td>
+                                                <td> <small> Boleta de Pago de Trámites de Graduación <br> L.4,000.00 <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-10' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -444,7 +444,7 @@
                                                 </td>
                                             </tr>
                                             <tr codigo='11'>
-                                                <td> <small> Boleta de Pago dde Enrega de Título por Ventanilla <br> L.2500.00 <br>(.pdf)</small></td>
+                                                <td> <small> Boleta de Pago dde Enrega de Título por Ventanilla <br> L.2,500.00 <br>(.pdf)</small></td>
                                                 <td>
                                                     <span id='sub-doc-11' class="badge badge-secondary">Sin revisar</span>
                                                 </td>
@@ -504,7 +504,7 @@
                                                 </td>
                                             </tr>
                                             </tr>
-                                            <tr codigo='15' class='docs-excelencia' hidden>
+                                            <tr codigo='15' class='docs-excelencia'>
                                                 <td> <small>Constancia de Conducta y Mención Honorífica por el Coordinador <br>(.pdf)</small> </td>
                                                 <td>
                                                     <span id='sub-doc-15' class="badge badge-secondary">Sin revisar</span>

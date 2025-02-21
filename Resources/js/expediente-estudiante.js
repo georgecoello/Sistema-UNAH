@@ -27,22 +27,7 @@ $(document).ready(function () {
     //ELIMINAMOS LOS CAMPOS QUE SON DE EXCELENCIA
     if (EXCELENCIA_ESTUDIANTE == "2"){
         $('.docs-excelencia').remove();
-    }
-
-    //MUESTRA LOS DOCUMENTOS QUE SE PIDEN EN OTROS
-    $.get("../../controller/estudiante/obtener-otros-docs.php", {carrera: ROL_COORDINADOR}, function(e) {
-        let docs = JSON.parse(e);
-
-        let template = "";
-
-        docs.forEach(doc => {
-            template += `
-            <li>${doc.nombre}</li>
-            `
-        });
-        $("#lista-otros").html(template);
-    });
-    
+    }    
  
     linkDescargas();
     comentariosInvalidos();
