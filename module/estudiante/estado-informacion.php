@@ -320,7 +320,7 @@
                                         <br><br><br>
                                         <div class="form-group">
                                             <label for="comentario">Comentario Coordinador:</label>
-                                            <textarea class="form-control" id="comentario" rows="3" ></textarea>
+                                            <textarea class="form-control" id="comentario" rows="3" disabled></textarea>
                                         </div>
                                         
                                         <div class="form-row justify-content-end">

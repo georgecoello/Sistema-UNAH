@@ -115,7 +115,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                     <small > <strong> Expedientes </strong></small> 
                                 </div>   
                             </div>
-                            
+                           
                             <div class="row">
                                 <div class="col">
                                     <a href="revisar-expediente.php" class="btn btn-warning naranja m-2 col-11 btn-sm sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Solicitudes nuevas</strong> </small></a>
@@ -125,16 +125,33 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                 <div class="col">
                                     <a href="revisar-expediente-repetido.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Solicitudes repetidas</strong> </small></a>
                                 </div>
-                            </div> 
+                            </div>                             
+                        </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-1"></div>
+                        <div class="pt-1 pb-2 mb-2 text-white text-center col-9" style='border-radius: 5px; background-color: #1a759f '> 
+                        <div class="row">
+                                <div class="col">
+                                    <small > <strong> Historial de Observaciones </strong></small> 
+                                </div>   
+                            </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="historialObservaciones.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Historial de Observaciones</strong> </small></a>
+                                    <a href="observaciones-info.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Información</strong> </small></a>
                                 </div>
                                 
                             </div> 
                             <div class="row">
                                 <div class="col">
-                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Resumen</strong> </small></a>
+                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Resultados</strong> </small></a>
+                                </div>
+                                
+                            </div> 
+                            <div class="row">
+                                <div class="col">
+                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Resumen de Estudiantes</strong> </small></a>
                                 </div>
                                 
                             </div> 
@@ -151,7 +168,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="citas.php" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
+                                    <a href="#" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
                                 </div>
                             </div> 
                         </div>
@@ -172,7 +189,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div> 
                             <div class="row">
                                 <div class="col">
-                                    <a href="#" class="btn btn-warning naranja m-2 col-11 btn-sm sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Subidas</strong> </small></a>
+                                    <a href="constancia-subida.php" class="btn btn-warning naranja m-2 col-11 btn-sm sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Subidas</strong> </small></a>
                                 </div>
                             </div>
                         </div>

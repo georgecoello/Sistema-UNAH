@@ -129,16 +129,33 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                 <div class="col">
                                     <a href="revisar-expediente-repetido.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Solicitudes repetidas</strong> </small></a>
                                 </div>
-                            </div> 
+                            </div>                             
+                        </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-1"></div>
+                        <div class="pt-1 pb-2 mb-2 text-white text-center col-9" style='border-radius: 5px; background-color: #1a759f '> 
+                        <div class="row">
+                                <div class="col">
+                                    <small > <strong> Historial de Observaciones </strong></small> 
+                                </div>   
+                            </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="historialObservaciones.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Historial de Observaciones</strong> </small></a>
+                                    <a href="observaciones-info.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Información</strong> </small></a>
                                 </div>
                                 
                             </div> 
                             <div class="row">
                                 <div class="col">
-                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Resumen</strong> </small></a>
+                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Resultados</strong> </small></a>
+                                </div>
+                                
+                            </div> 
+                            <div class="row">
+                                <div class="col">
+                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Resumen de Estudiantes</strong> </small></a>
                                 </div>
                                 
                             </div> 
@@ -291,9 +308,9 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 <th scope="col">ID</th>
                                                 <th scope="col">Nombre</th>
                                                 <th scope="col">Numero Cuenta</th>
-                                                <th scope="col">Correo Institucional</th>
                                                 <th scope="col">Fecha Cita</th>
                                                 <th scope="col">Cambiar Fecha</th>
+                                                <th scope="col">Correo Institucional</th>
                                             </tr>
                                         </thead>
                                         <tbody id="estudiantes">
@@ -552,8 +569,8 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                             <tr>
                                                 <th scope="col">Nombre</th>
                                                 <th scope="col">Numero Cuenta</th>
-                                                <th scope="col">Fecha Cita</th>
                                                 <th scope="col">Correo Institucional</th>
+                                                <th scope="col">Fecha Cita</th>
                                             </tr>
                                         </thead>
                                         <tbody id="estudiantes-excel">

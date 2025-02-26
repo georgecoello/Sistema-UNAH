@@ -674,7 +674,7 @@
     <script src="../../Resources/jquery/jquery.min.js"></script>
     <script src="../../Resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../Resources/js/toastr.js"></script>
-    <script src="../../Resources/js/estado-expediente-estudiante.js"></script>
+    <script src="../../Resources/js/expediente-estudiante-repetido.js"></script>
     
 
 

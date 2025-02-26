@@ -18,8 +18,8 @@
                 "nombres_estudiante" => $row["nombres_usuario"],
                 "apellidos_estudiante" => $row["apellidos_usuario"],
                 "numero_cuenta" => $row["numero_cuenta_estudiante"],
-                "fecha" => $row["fecha_cita"], 
-                "correo" => $row["correo_usuario"]
+                "correo" => $row["correo_usuario"],
+                "fecha" => $row["fecha_cita"]
             );
         }
 

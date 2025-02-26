@@ -292,10 +292,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-1' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-1' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='2'>
@@ -304,10 +304,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-2' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-2' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='3'>
@@ -316,10 +316,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-3' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-3' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -327,7 +327,7 @@
                                                 <small><b>En caso de tener más de una constancia de Horas Artículo 140 (VOAE), seleccione el botón para ingresarlas, y luego suba el documento generado.</b></small><br>
                                                 <br>
                                                     <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#activityModal" style="color: white;">
-                                                        <small>Subir archivos Horas Artículo 140</small>
+                                                        <small><b>Subir archivos Horas Artículo 140</b></small>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -337,10 +337,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-4' class="badge badge-danger">Sin subir</span>   
+                                                    <span id='sub-doc-4' class="badge badge-danger"><b>Sin subir</b></span>   
                                                 </td>
                                             </tr>
                                             <tr codigo='5'>
@@ -349,10 +349,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-5' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-5' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='6'>
@@ -361,10 +361,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-6' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-6' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='7'>
@@ -373,10 +373,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-7' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-7' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='8'>
@@ -385,10 +385,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-8' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-8' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='9'>
@@ -397,10 +397,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-9' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-9' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='10'>
@@ -409,10 +409,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-10' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-10' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='11'>
@@ -421,10 +421,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-11' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-11' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='12'>
@@ -433,10 +433,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-12' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-12' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='13'>
@@ -445,10 +445,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-13' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-13' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='14'>
@@ -457,10 +457,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-14' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-14' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
 
@@ -471,10 +471,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-15' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-15' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='16' class='docs-excelencia'>
@@ -483,10 +483,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-16' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-16' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             <tr codigo='17' class='docs-excelencia'>
@@ -495,10 +495,10 @@
                                                     <input type="file" class="form-control-file doc" aria-describedby="fileHelp">
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info btn-sm subir">Subir</button>
+                                                    <button class="btn btn-info btn-sm subir"><b>Subir</b></button>
                                                 </td>
                                                 <td>
-                                                    <span id='sub-doc-17' class="badge badge-danger">Sin subir</span>
+                                                    <span id='sub-doc-17' class="badge badge-danger"><b>Sin subir</b></span>
                                                 </td>
                                             </tr>
                                             

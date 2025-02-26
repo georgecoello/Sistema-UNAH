@@ -254,7 +254,8 @@ function mostrarEstudiantes(limiter, offset){
                     <tr user-id="${estudiante.id_estudiante}" scope="row">
                         <th>${estudiante.id_estudiante}</th>
                         <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
-                        <td>${estudiante.numero_cuenta}</td>
+                        <td>${estudiante.numero_cuenta}</td>  
+                        <td>${estudiante.correo}</td>                      
                         <td class="fecha">${estudiante.fecha}</td>
                         <td>
                             <button class="btn btn-success btn-sm cambiar-cita-user" data-toggle="modal" data-target="#cambiar-cita">
@@ -495,6 +496,7 @@ $(document).on("click", "#obtener-tabla", function(){
                     <tr scope="row">
                         <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
                         <td>${estudiante.numero_cuenta}</td>
+                        <td>${estudiante.correo}</td>
                         <td class="fecha">${estudiante.fecha}</td>
                     </tr>
                 `
