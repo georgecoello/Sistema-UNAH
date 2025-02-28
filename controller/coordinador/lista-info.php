@@ -1,12 +1,10 @@
 <?php
     include("../../Resources/lib/connection.php");
 
-    $rol = $_GET["rol"] ?? "";
-    $buscador = $_GET["buscador"] ?? "";
     $numero_registros = $_GET["limite"] ?? 10; // Número de registros por página
     $offset_registros = $_GET["offset"] ?? 0;  // Desde qué registro empezar
 
-    $sp = "CALL SP_GETLISTOBSERVACIONES($numero_registros, $offset_registros);";
+    $sp = "call SP_GETLISTCOMENTINFO($numero_registros, $offset_registros);";
     $query = mysqli_query($connection, $sp);
 
     if (!$query) {
@@ -19,6 +17,7 @@
                 "nombres_estudiante" => $row["nombres_usuario"],
                 "apellidos_estudiante" => $row["apellidos_usuario"],
                 "numero_cuenta" => $row["numero_cuenta_estudiante"],
+                "id_comentario" => $row["id_comentario_informacion"], 
                 "comentario" => $row["comentario"]
             ];
         }

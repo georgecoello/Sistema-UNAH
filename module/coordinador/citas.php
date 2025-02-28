@@ -149,7 +149,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div> 
                             <div class="row">
                                 <div class="col">
-                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Resultados</strong> </small></a>
+                                    <a href="observaciones-documentos.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Documentos</strong> </small></a>
                                 </div>
                                 
                             </div> 
@@ -172,7 +172,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
+                                    <a href="citas.php" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
                                 </div>
                             </div> 
                         </div>
@@ -308,9 +308,9 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                                 <th scope="col">ID</th>
                                                 <th scope="col">Nombre</th>
                                                 <th scope="col">Numero Cuenta</th>
+                                                <th scope="col">Correo Institucional</th>
                                                 <th scope="col">Fecha Cita</th>
                                                 <th scope="col">Cambiar Fecha</th>
-                                                <th scope="col">Correo Institucional</th>
                                             </tr>
                                         </thead>
                                         <tbody id="estudiantes">

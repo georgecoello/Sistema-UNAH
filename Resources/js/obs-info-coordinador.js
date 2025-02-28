@@ -167,80 +167,9 @@ $(document).on("click", "#cambiar-pass", function(){
 function inicializar(){
     var offset = 0;
     
-    numeroEstudiantes();                                    //Se manda a obtener el numero de estudiantes que aun no se valida
-    mostrarObservaciones(LIMIT_STUDENTS_TABLE, offset);       //Manda a mostrar los estudinates
     numeroEstudiantesInfo();
     mostrarObservacionesInfo(LIMIT_STUDENTS_TABLE, offset); // Llama a la función para mostrar observaciones
 }
-
-/**FUNCION PARA OBTENER NUMERO DE ESTUDIANTES POR VALIDAR Y MANDAR A CREAR PAGINACION PARA LA VISTA DE LOS DOCUMENTOS */
-function numeroEstudiantes() {
-    $.get("../../controller/coordinador/cantidad-observaciones.php", function (e) {
-        console.log("Respuesta del servidor:", e); // <-- Agregar esto
-        var cantidad_est = parseInt(e.trim(), 10);
-
-        if (isNaN(cantidad_est) || cantidad_est <= 0) {
-            console.warn("Número de observaciones no válido:", e);
-            return;
-        }
-
-        crearPaginacion(cantidad_est);
-    }).fail(function () {
-        console.error("Error al obtener la cantidad de observaciones.");
-    });
-}
-
-
-/**FUNCION PARA CREAR LA PAGINACION PARA LA VISTA DE LOS DOCUMENTOS */
-function crearPaginacion(estudiantes) {
-    var cantidad_est = parseInt(estudiantes);
-    var numero_paginas = Math.ceil(cantidad_est / LIMIT_STUDENTS_TABLE);
-
-    // Validar que numero_paginas sea un número válido y mayor que 0
-    if (isNaN(numero_paginas) || numero_paginas <= 0) {
-        console.error("Número de páginas no válido:", numero_paginas);
-        return; // Detener la ejecución si no es válido
-    }
-
-    /**PLUGIN PARA LA CREACION DE PAGINACION RESPONSIVE */
-    $('#paginacion').twbsPagination({
-        totalPages: numero_paginas,
-        visiblePages: 5,
-        onPageClick: function (event, page) {
-            var offset = (page - 1) * LIMIT_STUDENTS_TABLE;
-            mostrarObservaciones(LIMIT_STUDENTS_TABLE, offset); // Llama a la función para mostrar observaciones
-        }
-    });
-}
-
-/**FUNCION PARA MOSTRAR ESTUDIANTES CON PAGINACION PARA LA VISTA DE LOS DOCUMENTOS */
-function mostrarObservaciones(limiter, offset) {
-    const getData = {
-        limit: limiter,
-        offset: offset,
-        rol: ROL_COORDINADOR
-    }
- 
-    $.get("../../controller/coordinador/lista-documentos.php", getData, function (e) {
-        console.log("Respuesta del backend:", e);
-        let estudiantes = JSON.parse(e);
-        let template = "";
- 
-        estudiantes.forEach(estudiante => {
-            template += `
-                 <tr user-id="${estudiante.id_estudiante}">
-                     <th>${estudiante.id_estudiante}</th>
-                     <td>${estudiante.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
-                     <td>${estudiante.numero_cuenta}</td>
-                     <td>${estudiante.id_respuesta}</td>
-                     <td>${estudiante.descripcion}</td>
-                 </tr>
-             `;
-        });
- 
-        $("#estudiantes").html(template);
-    });
- }
 
  /**FUNCION PARA OBTENER NUMERO DE ESTUDIANTES POR VALIDAR Y MANDAR A CREAR PAGINACION PARA LA VISTA DE LA INFORMACIÓN DEL ESTUDIANTE */
 function numeroEstudiantesInfo() {
@@ -272,7 +201,7 @@ function crearPaginacionInfo(estudiantes) {
     }
 
     /**PLUGIN PARA LA CREACION DE PAGINACION RESPONSIVE */
-    $('#paginacion').twbsPagination({
+    $('#paginacionInfo').twbsPagination({
         totalPages: numero_paginas,
         visiblePages: 5,
         onPageClick: function (event, page) {
@@ -290,7 +219,7 @@ function mostrarObservacionesInfo(limiter, offset) {
         rol: ROL_COORDINADOR
     }
  
-    $.get("../../controller/coordinador/lista-documentos.php", getData, function (e) {
+    $.get("../../controller/coordinador/lista-info.php", getData, function (e) {
         console.log("Respuesta del backend:", e);
         let estudiantesInfo = JSON.parse(e);
         let template = "";
@@ -299,7 +228,7 @@ function mostrarObservacionesInfo(limiter, offset) {
             template += `
                  <tr user-id="${estudiantesInfo.id_estudiante}">
                      <th>${estudiantesInfo.id_estudiante}</th>
-                     <td>${estudiantesInfo.nombres_estudiante} ${estudiante.apellidos_estudiante}</td>
+                     <td>${estudiantesInfo.nombres_estudiante} ${estudiantesInfo.apellidos_estudiante}</td>
                      <td>${estudiantesInfo.numero_cuenta}</td>
                      <td>${estudiantesInfo.id_comentario}</td>
                      <td>${estudiantesInfo.comentario}</td>

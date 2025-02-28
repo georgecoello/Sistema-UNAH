@@ -17,7 +17,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historial de Observaciones</title>
+    <title>Comentario Info Estudiantes</title>
     <link rel="stylesheet" href="../../Resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../Resources/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../../Resources/css/simple-sidebar.css">
@@ -149,7 +149,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div> 
                             <div class="row">
                                 <div class="col">
-                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Resultados</strong> </small></a>
+                                    <a href="observaciones-documentos.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Documentos</strong> </small></a>
                                 </div>
                                 
                             </div> 
@@ -172,7 +172,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
+                                    <a href="citas.php" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
                                 </div>
                             </div> 
                         </div>
@@ -261,7 +261,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                 <div class="col-1"></div>
                 <div class="col-10">
                     <h3 class="bg-dark text-center" style="border-radius: 5px;">
-                        <p style="color:white;" id="numero-estudiantes">Historial de Observaciones</p>
+                        <p style="color:white;" id="numero-estudiantes">Historial de Observaciones de Información de Estudiante</p>
                     </h3>
                 </div>
                 <div class="col-1"></div>
@@ -298,8 +298,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                                     <th scope="col">Observación Realizada</th>
                                 </tr>
                             </thead>
-                            <tbody id="estudiantes">
-                                <!-- Aquí se insertarán los datos dinámicamente -->
+                            <tbody id="estudiantes-info">
                             </tbody>
                         </table>
                     </div>    
@@ -311,7 +310,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div>
-                        <ul class="pagination pagination-sm" id="paginacion">
+                        <ul class="pagination pagination-sm" id="paginacionInfo">
                             <!-- Paginación dinámica -->
                         </ul>
                     </div>
@@ -570,7 +569,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
     <script src="../../Resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../Resources/js/toastr.js"></script>
     <script src="../../Resources/js/responsive-paginate.js"></script>
-    <script src="../../Resources/js/observaciones-coord.js"></script>
+    <script src="../../Resources/js/obs-info-coordinador.js"></script>
 
     <script type="text/javascript" src="../../Resources/datatables/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../Resources/datatables/dataTables.bootstrap4.min.js"></script>

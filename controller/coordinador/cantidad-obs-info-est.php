@@ -2,7 +2,7 @@
 include("../../Resources/lib/connection.php");
 
 // Prepara la llamada al procedimiento almacenado
-$sp = "CALL SP_NUMEROBSERVACIONES();"; // Llamada sin parámetros
+$sp = "CALL SP_NUMCOMINFO();"; // Llamada sin parámetros
 $result = mysqli_query($connection, $sp);
 
 if (!$result) {

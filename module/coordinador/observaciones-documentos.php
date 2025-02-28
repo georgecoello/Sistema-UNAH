@@ -17,7 +17,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiantes Resumen</title>
+    <title>Comentario Documentos</title>
     <link rel="stylesheet" href="../../Resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../Resources/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../../Resources/css/simple-sidebar.css">
@@ -70,8 +70,8 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                     </div>
                 </div>
             </div>
-           <!-----------------------------CONTENIDO DEL SIDEBAR-------------------->
-           <div class="container sidebar-content  py-4 " style='background-color: #000e2bb0 '>
+            <!-----------------------------CONTENIDO DEL SIDEBAR-------------------->
+            <div class="container sidebar-content  py-4 " style='background-color: #000e2bb0 '>
             
             <div class="row text-center">
                     <div class="col-1"></div>
@@ -261,7 +261,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                 <div class="col-1"></div>
                 <div class="col-10">
                     <h3 class="bg-dark text-center" style="border-radius: 5px;">
-                        <p style="color:white;" id="numero-estudiantes">Tabla Resumen de Estudiantes</p>
+                        <p style="color:white;" id="numero-estudiantes">Historial de Observaciones de Documentos</p>
                     </h3>
                 </div>
                 <div class="col-1"></div>
@@ -291,9 +291,11 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                         <table class="table table-sm table-hover table-striped text-center table-light" id="example">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th scope="col">Número de cuenta Estudiante</th>
-                                    <th scope="col">Fecha</th>
-                                    <th scope="col">Estado de Expediente</th>
+                                    <th scope="col">ID Estudiante</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Número de Cuenta</th>
+                                    <th scope="col">ID Observación</th>
+                                    <th scope="col">Observación Realizada</th>
                                 </tr>
                             </thead>
                             <tbody id="estudiantes">
@@ -567,7 +569,8 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
     <script src="../../Resources/jquery/jquery.min.js"></script>
     <script src="../../Resources/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../Resources/js/toastr.js"></script>
-
+    <script src="../../Resources/js/responsive-paginate.js"></script>
+    <script src="../../Resources/js/observaciones-coord.js"></script>
 
     <script type="text/javascript" src="../../Resources/datatables/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../Resources/datatables/dataTables.bootstrap4.min.js"></script>

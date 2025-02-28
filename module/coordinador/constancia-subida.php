@@ -145,7 +145,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div> 
                             <div class="row">
                                 <div class="col">
-                                    <a href="tabla-resumen.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Resultados</strong> </small></a>
+                                    <a href="observaciones-documentos.php" class="btn btn-warning btn-sm naranja m-2 col-11 sombra-corta3" role="button" style='border-radius: 5px;'> <small><strong>Comentario de Documentos</strong> </small></a>
                                 </div>
                                 
                             </div> 
@@ -168,7 +168,7 @@ if(strcmp($_SESSION['modulo'],'2') !== 0){
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <a href="#" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
+                                    <a href="citas" class="btn btn-warning naranja m-2 col-11 sombra-corta3 btn-sm" role="button" style='border-radius: 5px;'> <small><strong>Ver citas</strong> </small></a>
                                 </div>
                             </div> 
                         </div>
